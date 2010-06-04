@@ -1,0 +1,18 @@
+#About ASN1Parser
+
+= ASN1Parserについて =
+
+ASN1Parserは3GPP標準を読み解くにあたり、
+そこに記載されたASN.1の理解を手助けするために作成した、
+いわゆる「なんちゃって」ASN.1パーサです。
+
+ASN1Parserの目的はあくまでASN.1の読解であり、
+バイナリエンコード／デコードは目的といませんのでご了承ください。
+
+
+= Details =
+
+Add your content here.  Format your content with:
+  * Text in *bold* or _italic_
+  * Headings, paragraphs, and lists
+  * Automatic links to other wiki pages
