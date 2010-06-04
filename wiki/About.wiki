@@ -7,12 +7,24 @@ ASN1Parserは3GPP標準を読み解くにあたり、
 いわゆる「なんちゃって」ASN.1パーサです。
 
 ASN1Parserの目的はあくまでASN.1の読解であり、
-バイナリエンコード／デコードは目的といませんのでご了承ください。
+バイナリエンコード／デコードは目的としていませんのでご了承ください。
 
+= ASN1Parserの目的 =
 
-= Details =
+ASN1Parserが対象としているのは、
+3GPP Release8およびRelease9で規定されたLTE(Long Term Evolution)の
+RRC(TS36.331)、S1AP(TS36.413)、X2AP(TS36.423)プロトコルです。
 
-Add your content here.  Format your content with:
-  * Text in *bold* or _italic_
-  * Headings, paragraphs, and lists
-  * Automatic links to other wiki pages
+現状、実装上の問題により、ASN.1の最も基本的な
+　* 型割当て(Type Assignment)、
+　* 値割当て(Value Assignment)
+以外の構文を使用したASN.1の解析ができません。
+
+よって、たとえば
+  * オブジェクト割当て
+  * オブジェクトクラス割当て
+  * パラメータ化
+を使ったASN.1の解析は難しいです。
+
+S1AP、X2APはこれらのASN.1構文を好んで(?)使っており、
+ASN1Parserではこれを汎用性のない方法で処理しています。
