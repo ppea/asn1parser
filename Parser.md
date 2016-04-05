@@ -1,0 +1,12 @@
+#Parser design
+
+# Parser #
+
+ASN1Parserでは構文解析部分に『caper』で作成したパーサを使用しています。
+
+(caper - http://caper.googlecode.com/svn/trunk/caper/site/caper.html)
+
+caperはNaoyuki HIRAYAMAさんが作成されたLALR(1)パーサジェネレータです。
+
+C#のコードを生成するパーサジェネレータが少なく、
+またcaperはBisonとほぼ同じように使えたため利用させていただきました。
